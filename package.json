@@ -1,0 +1,22 @@
+{
+  "name": "@zj/r-stream",
+  "version": "0.1.0",
+  "description": "FRP toolkit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "frp",
+    "event-stream"
+  ],
+  "author": "jackzj <ybybzj@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@zj/fnkit": "^0.1.0"
+  },
+  "publishConfig":{
+    "scope": "@zj",
+    "registry": "http://npm.qtang.net"
+  }
+}
