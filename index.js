@@ -5,7 +5,8 @@ function isFunction(obj) {
 }
 // stream mixins
 var streamMixins = {
-  on: bindFn(on)
+  on: bindFn(on),
+  log: bindFn(log)
 };
 function bindFn(fn){
   return function bound(){
@@ -26,7 +27,18 @@ var flushing = false;
 function on(f, s) {
   stream([s], function() { f(s.val); });
 }
-
+function log(msg, s) {
+  if(arguments.length === 1){
+    s = msg;
+    msg = null;
+  }
+  stream([s], function(){
+    console.log((msg?msg+' - ' : '') + s.toString());
+  });
+  stream([s.end], function(){
+    console.log((msg?msg+' - ' : '') + 'stream<End>');
+  });
+}
 function _initialDepsNotMet(stream) {
   stream.depsMet = stream.deps.every(function(s) {
     return s.hasVal;
