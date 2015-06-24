@@ -1,6 +1,6 @@
 {
   "name": "@zj/r-stream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FRP toolkit",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "@zj/fnkit": "^0.1.0"
   },
-  "publishConfig":{
+  "publishConfig": {
     "scope": "@zj",
     "registry": "http://npm.qtang.net"
   }
