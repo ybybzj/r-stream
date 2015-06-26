@@ -95,6 +95,8 @@ function updateDeps(s) {
     if (o.shouldUpdate === true) updateStream(o);
     o.queued = false;
   }
+  //reset queued when finishing update
+  s.queued = false;
 }
 
 
