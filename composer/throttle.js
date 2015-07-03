@@ -1,5 +1,5 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 
 function throttle(wait, s) {
   var leading, trailing;

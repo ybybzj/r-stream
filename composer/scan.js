@@ -1,5 +1,5 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 
 function scan(f, acc, s) {
   var ns = r$([s], function() {

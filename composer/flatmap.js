@@ -1,5 +1,5 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 var map = require('./map');
 function flatmap(f, s){
   return r$([s], function(self){

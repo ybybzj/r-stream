@@ -1,6 +1,6 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
-var slice = require('@zj/fnkit/slice');
+var curry = require('fnkit/curry');
+var slice = require('fnkit/slice');
 function lift(f /*streams...*/){
   var streams =  slice(arguments, 1);
   var vals = [];

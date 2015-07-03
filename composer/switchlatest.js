@@ -1,5 +1,5 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 var merge = require('./merge');
 function switchlatest(s){
   var inner;

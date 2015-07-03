@@ -1,5 +1,5 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 
 function apply(s1, s2) {
   return r$([s1, s2], function() {

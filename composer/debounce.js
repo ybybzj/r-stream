@@ -1,5 +1,5 @@
 var r$ = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 function debounce(wait, s){
   var immediate;
   if(typeof wait === 'object'){

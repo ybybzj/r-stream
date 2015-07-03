@@ -1,5 +1,5 @@
 var stream = require('../index');
-var curry = require('@zj/fnkit/curry');
+var curry = require('fnkit/curry');
 function map(f, s) {
   return stream([s], function(self) { self(f(s.val)); });
 }
