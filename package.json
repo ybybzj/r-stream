@@ -1,7 +1,7 @@
 {
-  "name": "@zj/r-stream",
+  "name": "r-stream",
   "version": "0.1.4",
-  "description": "FRP toolkit",
+  "description": "FRP toolkit based on flyd",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,10 +13,6 @@
   "author": "jackzj <ybybzj@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@zj/fnkit": "^0.1.0"
-  },
-  "publishConfig": {
-    "scope": "@zj",
-    "registry": "http://npm.qtang.net"
+    "fnkit": "git://github.com/ybybzj/fnkit.git#master",
   }
 }
